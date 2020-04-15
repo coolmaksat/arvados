@@ -200,6 +200,7 @@ run() {
         PUBLIC="--volume=$iptemp:/var/run/localip_override
               --publish=443:443
               --publish=3001:3001
+              --publish=4200:4200
               --publish=8000:8000
               --publish=8900:8900
               --publish=9000:9000
