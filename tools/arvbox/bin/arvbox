@@ -199,15 +199,24 @@ run() {
         chmod og+r $iptemp
         PUBLIC="--volume=$iptemp:/var/run/localip_override
               --publish=443:443
-              --publish=3001:3001
+              --publish=3000:3000
+	      --publish=3001:3001
               --publish=4200:4200
               --publish=8000:8000
+	      --publish=8001:8001
+              --publish=8002:8002
+	      --publish=8003:8003
+              --publish=8004:8004
+	      --publish=8005:8005
               --publish=8900:8900
               --publish=9000:9000
+	      --publish=9001:9001
               --publish=9002:9002
-              --publish=25101:25101
-              --publish=8001:8001
-              --publish=8002:8002"
+              --publish=9003:9003
+              --publish=25100:25100
+	      --publish=25101:25101
+	      --publish=25107:25107
+	      --publish=25108:25108"
     else
         PUBLIC=""
     fi
